@@ -10,7 +10,6 @@ public class Question {
     String answer1;
     String answer2;
     String answer3;
-    int userAnswer;
     int correctAnswer;
     int playerAnswer;
 
@@ -32,7 +31,7 @@ public class Question {
     }
 
     public boolean isCorrect() {
-        return userAnswer == correctAnswer;
+        return correctAnswer == playerAnswer;
     }
 
     /* COPY: End here */
